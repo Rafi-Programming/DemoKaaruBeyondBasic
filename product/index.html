@@ -237,17 +237,21 @@
 
     </div>
 
-    <!-- ==========================================
-            PRODUCT INFO
+   <!-- ==========================================
+            PRODUCT INFO CARD
 ========================================== -->
 
 <div class="product-card">
+
+    <!-- Category -->
 
     <span class="product-category">
 
         Signature Collection
 
     </span>
+
+    <!-- Product Name -->
 
     <h1>
 
@@ -261,6 +265,8 @@
 
     </p>
 
+    <!-- Price -->
+
     <div class="price">
 
         Rp189.000
@@ -271,22 +277,23 @@
 
     <div class="divider"></div>
 
+    <!-- Description -->
+
     <p class="product-description">
 
-        Hijab premium berbahan Ultra-fine Voile
-        yang ringan, lembut, tidak mudah kusut,
-        mudah dibentuk, serta nyaman digunakan
-        sepanjang hari.
+        Hijab premium berbahan Ultra-fine Voile yang ringan,
+        lembut, tidak mudah kusut, mudah dibentuk,
+        serta nyaman digunakan sepanjang hari.
+        Dirancang untuk menemani aktivitas harian
+        dengan tampilan yang elegan dan timeless.
 
     </p>
 
-</div>
+    <!-- Divider -->
 
-<!-- ==========================================
-            PRODUCT DETAILS
-========================================== -->
+    <div class="divider"></div>
 
-<div class="product-card">
+    <!-- Product Details -->
 
     <h3 class="card-title">
 
@@ -294,11 +301,9 @@
 
     </h3>
 
-    <div class="divider"></div>
-
     <div class="product-meta">
 
-        <div>
+        <div class="meta-item">
 
             <span>Material</span>
 
@@ -306,7 +311,7 @@
 
         </div>
 
-        <div>
+        <div class="meta-item">
 
             <span>Size</span>
 
@@ -314,7 +319,7 @@
 
         </div>
 
-        <div>
+        <div class="meta-item">
 
             <span>Finishing</span>
 
@@ -322,144 +327,131 @@
 
         </div>
 
+        <div class="meta-item">
+
+            <span>Texture</span>
+
+            <strong>Soft, Lightweight & Breathable</strong>
+
+        </div>
+
+    </div>
+
+    <!-- Divider -->
+
+    <div class="divider"></div>
+
+    <!-- Available Colors -->
+
+    <h3 class="card-title">
+
+        Available Colors
+
+    </h3>
+
+    <div class="color-options">
+
+        <button
+            class="color-swatch active"
+            data-color="Ivory"
+            data-image="../assets/images/product-1.jpg"
+            style="background:#F6F2EB;">
+        </button>
+
+        <button
+            class="color-swatch"
+            data-color="Latte"
+            data-image="../assets/images/product-2.jpg"
+            style="background:#D8C2A8;">
+        </button>
+
+        <button
+            class="color-swatch"
+            data-color="Mocha"
+            data-image="../assets/images/product-3.jpg"
+            style="background:#9A7B63;">
+        </button>
+
+        <button
+            class="color-swatch"
+            data-color="Olive"
+            data-image="../assets/images/product-4.jpg"
+            style="background:#8D9472;">
+        </button>
+
+        <button
+            class="color-swatch"
+            data-color="Black"
+            data-image="../assets/images/product-5.jpg"
+            style="background:#2E2E2E;">
+        </button>
+
+    </div>
+
+    <p id="selectedColor">
+
+        Selected Color :
+        <strong>Ivory</strong>
+
+    </p>
+
+    <!-- Divider -->
+
+    <div class="divider"></div>
+
+    <!-- Quantity -->
+
+    <h3 class="card-title">
+
+        Quantity
+
+    </h3>
+
+    <div class="quantity-box">
+
+        <button id="minusQty">
+
+            <i class="fa-solid fa-minus"></i>
+
+        </button>
+
+        <span id="qtyValue">
+
+            1
+
+        </span>
+
+        <button id="plusQty">
+
+            <i class="fa-solid fa-plus"></i>
+
+        </button>
+
+    </div>
+
+    <!-- Action Button -->
+
+    <div class="product-action">
+
+        <button
+            id="addCartBtn"
+            class="btn-dark">
+
+            Add To Cart
+
+        </button>
+
+        <button
+            id="buyNowBtn"
+            class="btn-outline">
+
+            Buy Now
+
+        </button>
+
     </div>
 
 </div>
-
-        <!-- ==========================================
-                    COLOR OPTIONS
-        =========================================== -->
-
-        <div class="product-option">
-
-            <h3>
-
-                Available Colors
-
-            </h3>
-
-            <div class="color-options">
-
-                <button
-                    class="color-swatch active"
-                    data-color="Ivory"
-                    data-image="../assets/images/products/product-1.jpg"
-                    style="background:#F6F2EA;">
-                </button>
-
-                <button
-                    class="color-swatch"
-                    data-color="Warm Dune"
-                    data-image="../assets/images/products/product-2.jpg"
-                    style="background:#CDB79E;">
-                </button>
-
-                <button
-                    class="color-swatch"
-                    data-color="Taupe Veil"
-                    data-image="../assets/images/products/product-3.jpg"
-                    style="background:#907B68;">
-                </button>
-
-                <button
-                    class="color-swatch"
-                    data-color="Mocha"
-                    data-image="../assets/images/products/product-4.jpg"
-                    style="background:#5C4B42;">
-                </button>
-
-                <button
-                    class="color-swatch"
-                    data-color="Black"
-                    data-image="../assets/images/products/product-5.jpg"
-                    style="background:#232323;">
-                </button>
-
-            </div>
-
-            <p
-                id="selectedColor"
-                class="selected-color">
-
-                Color :
-                <strong>Ivory</strong>
-
-            </p>
-
-        </div>
-
-        <!-- Divider -->
-
-        <div class="divider"></div>
-
-        <!-- ==========================================
-                    QUANTITY
-        =========================================== -->
-
-        <div class="product-option">
-
-            <h3>
-
-                Quantity
-
-            </h3>
-
-            <div class="quantity-box">
-
-                <button
-                    id="minusQty">
-
-                    <i class="fa-solid fa-minus"></i>
-
-                </button>
-
-                <span
-                    id="qtyValue">
-
-                    1
-
-                </span>
-
-                <button
-                    id="plusQty">
-
-                    <i class="fa-solid fa-plus"></i>
-
-                </button>
-
-            </div>
-
-        </div>
-
-        <!-- Divider -->
-
-        <div class="divider"></div>
-
-        <!-- ==========================================
-                    ACTION BUTTON
-        =========================================== -->
-
-        <div class="product-action">
-
-            <button
-                id="addCartBtn"
-                class="btn-outline">
-
-                <i class="fa-solid fa-bag-shopping"></i>
-
-                Add To Cart
-
-            </button>
-
-            <button
-                id="buyNowBtn"
-                class="btn-dark">
-
-                Buy Now
-
-            </button>
-
-        </div>
 
         <!-- ==========================================
                     PRODUCT BENEFIT
