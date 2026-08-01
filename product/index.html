@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>KAARU Beyond Basic | Product</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==========================================
+                HEADER
+========================================== -->
+
+<header class="header">
+
+    <nav class="navbar">
+
+        <a href="../index.html"
+            class="logo">
+
+            <h2>KAARU</h2>
+
+            <span>Beyond Basic</span>
+
+        </a>
+
+        <ul class="nav-menu">
+
+            <li>
+
+                <a href="../index.html">
+
+                    Home
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../collection/index.html">
+
+                    Collection
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../about/index.html">
+
+                    About
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../fabric/index.html">
+
+                    Fabric
+
+                </a>
+
+            </li>
+
+            <li>
+
+                <a href="../faq/index.html">
+
+                    FAQ
+
+                </a>
+
+            </li>
+
+        </ul>
+
+        <div class="nav-icons">
+
+            <button class="icon-btn">
+
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+            </button>
+
+            <button class="icon-btn">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                <span
+                    id="cartCount"
+                    class="cart-badge">
+
+                    0
+
+                </span>
+
+            </button>
+
+        </div>
+
+    </nav>
+
+</header>
+
+<!-- ==========================================
+                PRODUCT HERO
+========================================== -->
+
+<section class="product-page">
+
+<div class="container">
+
+<div class="product-grid">
+
+        <!-- ==========================================
+                    PRODUCT GALLERY
+    =========================================== -->
+
+    <div class="product-gallery">
+
+        <!-- Thumbnail -->
+
+        <div class="thumbnail-list">
+
+            <img
+                class="thumb active"
+                src="Foto Model 2.jpeg"
+                data-image="Foto Model 2.jpeg"
+                alt="Ivory">
+
+            <img
+                class="thumb"
+                src="Foto model 3.jpeg"
+                data-image="Foto model 3.jpeg"
+                alt="Warm Dune">
+
+            <img
+                class="thumb"
+                src="Foto Model 5.jpeg"
+                data-image="Foto Model 5.jpeg"
+                alt="Taupe">
+
+            <img
+                class="thumb"
+                src="Foto Model 6.jpeg"
+                data-image="Foto Model 6.jpeg"
+                alt="Mocha">
+
+        </div>
+
+        <!-- Main Image -->
+
+        <div class="main-image">
+
+            <img
+                id="mainProductImage"
+                src="foto model 8.jpeg"
+                alt="KAARU Beyond Basic">
+
+        </div>
+
+    </div>
+
+    <!-- ==========================================
+                    PRODUCT INFO
+    =========================================== -->
+
+    <div class="product-info">
+
+        <span class="product-category">
+
+            Signature Collection
+
+        </span>
+
+        <h1>
+
+            KAARU Beyond Basic
+
+        </h1>
+
+        <p class="product-subtitle">
+
+            Premium Ultra-fine Voile
+
+        </p>
+
+        <div class="price">
+
+            Rp189.000
+
+        </div>
+
+        <p class="product-description">
+
+            Hijab premium berbahan Ultra-fine Voile
+            yang ringan, lembut, tidak mudah kusut,
+            mudah dibentuk, serta nyaman digunakan
+            sepanjang hari.
+
+        </p>
+
+        <!-- Divider -->
+
+        <div class="divider"></div>
+
+        <!-- Product Info -->
+
+        <div class="product-meta">
+
+            <div>
+
+                <span>Material</span>
+
+                <strong>Premium Ultra-fine Voile</strong>
+
+            </div>
+
+            <div>
+
+                <span>Size</span>
+
+                <strong>115 × 115 cm</strong>
+
+            </div>
+
+            <div>
+
+                <span>Finishing</span>
+
+                <strong>Baby Hem Premium</strong>
+
+            </div>
+
+        </div>
+                <!-- Divider -->
+
+        <div class="divider"></div>
+
+        <!-- ==========================================
+                    COLOR OPTIONS
+        =========================================== -->
+
+        <div class="product-option">
+
+            <h3>
+
+                Available Colors
+
+            </h3>
+
+            <div class="color-options">
+
+                <button
+                    class="color-swatch active"
+                    data-color="Ivory"
+                    data-image="../assets/images/products/product-1.jpg"
+                    style="background:#F6F2EA;">
+                </button>
+
+                <button
+                    class="color-swatch"
+                    data-color="Warm Dune"
+                    data-image="../assets/images/products/product-2.jpg"
+                    style="background:#CDB79E;">
+                </button>
+
+                <button
+                    class="color-swatch"
+                    data-color="Taupe Veil"
+                    data-image="../assets/images/products/product-3.jpg"
+                    style="background:#907B68;">
+                </button>
+
+                <button
+                    class="color-swatch"
+                    data-color="Mocha"
+                    data-image="../assets/images/products/product-4.jpg"
+                    style="background:#5C4B42;">
+                </button>
+
+                <button
+                    class="color-swatch"
+                    data-color="Black"
+                    data-image="../assets/images/products/product-5.jpg"
+                    style="background:#232323;">
+                </button>
+
+            </div>
+
+            <p
+                id="selectedColor"
+                class="selected-color">
+
+                Color :
+                <strong>Ivory</strong>
+
+            </p>
+
+        </div>
+
+        <!-- Divider -->
+
+        <div class="divider"></div>
+
+        <!-- ==========================================
+                    QUANTITY
+        =========================================== -->
+
+        <div class="product-option">
+
+            <h3>
+
+                Quantity
+
+            </h3>
+
+            <div class="quantity-box">
+
+                <button
+                    id="minusQty">
+
+                    <i class="fa-solid fa-minus"></i>
+
+                </button>
+
+                <span
+                    id="qtyValue">
+
+                    1
+
+                </span>
+
+                <button
+                    id="plusQty">
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+        <!-- Divider -->
+
+        <div class="divider"></div>
+
+        <!-- ==========================================
+                    ACTION BUTTON
+        =========================================== -->
+
+        <div class="product-action">
+
+            <button
+                id="addCartBtn"
+                class="btn-outline">
+
+                <i class="fa-solid fa-bag-shopping"></i>
+
+                Add To Cart
+
+            </button>
+
+            <button
+                id="buyNowBtn"
+                class="btn-dark">
+
+                Buy Now
+
+            </button>
+
+        </div>
+
+        <!-- ==========================================
+                    PRODUCT BENEFIT
+        =========================================== -->
+
+        <div class="product-benefits">
+
+            <div>
+
+                <i class="fa-solid fa-truck-fast"></i>
+
+                <span>
+
+                    Free Shipping*
+
+                </span>
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-shield-heart"></i>
+
+                <span>
+
+                    Premium Quality
+
+                </span>
+
+            </div>
+
+            <div>
+
+                <i class="fa-solid fa-rotate-left"></i>
+
+                <span>
+
+                    Easy Exchange
+
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+</section>
+<!-- ==========================================
+            PRODUCT DETAILS
+========================================== -->
+
+<section class="product-details">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>PRODUCT DETAILS</span>
+
+            <h2>Crafted for Everyday Elegance</h2>
+
+        </div>
+
+        <div class="detail-grid">
+
+            <div class="detail-card">
+
+                <h3>Material</h3>
+
+                <p>
+
+                    Premium Ultra-fine Voile dengan karakter kain
+                    ringan, halus, breathable, mudah dibentuk,
+                    serta nyaman digunakan sepanjang hari.
+
+                </p>
+
+            </div>
+
+            <div class="detail-card">
+
+                <h3>Size</h3>
+
+                <p>
+
+                    115 × 115 cm
+
+                    Cocok digunakan dalam berbagai gaya hijab,
+                    baik casual maupun formal.
+
+                </p>
+
+            </div>
+
+            <div class="detail-card">
+
+                <h3>Finishing</h3>
+
+                <p>
+
+                    Baby Hem Premium yang dijahit rapi pada setiap
+                    sisi sehingga terlihat lebih elegan dan awet.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+            CARE GUIDE
+========================================== -->
+
+<section class="care-guide">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>CARE INSTRUCTIONS</span>
+
+            <h2>How To Care</h2>
+
+        </div>
+
+        <div class="care-grid">
+
+            <div class="care-item">
+
+                <i class="fa-solid fa-hand"></i>
+
+                <h4>Hand Wash</h4>
+
+                <p>
+
+                    Cuci menggunakan tangan
+                    dengan deterjen lembut.
+
+                </p>
+
+            </div>
+
+            <div class="care-item">
+
+                <i class="fa-solid fa-water"></i>
+
+                <h4>Cold Water</h4>
+
+                <p>
+
+                    Gunakan air dingin
+                    agar warna tetap terjaga.
+
+                </p>
+
+            </div>
+
+            <div class="care-item">
+
+                <i class="fa-solid fa-shirt"></i>
+
+                <h4>Do Not Bleach</h4>
+
+                <p>
+
+                    Hindari penggunaan
+                    pemutih berbahan keras.
+
+                </p>
+
+            </div>
+
+            <div class="care-item">
+
+                <i class="fa-solid fa-wind"></i>
+
+                <h4>Air Dry</h4>
+
+                <p>
+
+                    Jemur di tempat teduh
+                    agar kain tetap awet.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                FAQ
+========================================== -->
+
+<section class="product-faq">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>FAQ</span>
+
+            <h2>Frequently Asked Questions</h2>
+
+        </div>
+
+        <div class="faq-wrapper">
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Apakah hijab ini mudah dibentuk?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Ya. Material Premium Ultra-fine Voile
+                        memiliki tekstur ringan sehingga mudah
+                        dibentuk tanpa terasa berat.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Apakah kainnya menerawang?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Tingkat ketebalan kain sudah disesuaikan
+                        agar tetap nyaman digunakan.
+                        Untuk warna terang tetap disarankan
+                        menggunakan inner.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="faq-item">
+
+                <button class="faq-question">
+
+                    Berapa lama proses pengiriman?
+
+                    <i class="fa-solid fa-plus"></i>
+
+                </button>
+
+                <div class="faq-answer">
+
+                    <p>
+
+                        Pesanan diproses maksimal
+                        1×24 jam pada hari kerja.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==========================================
+            CTA
+========================================== -->
+
+<section class="product-cta">
+
+    <div class="container">
+
+        <div class="cta-card">
+
+            <span>
+
+                READY TO WEAR
+
+            </span>
+
+            <h2>
+
+                Find Your Favorite Color
+
+            </h2>
+
+            <p>
+
+                Pilih warna favoritmu dan lengkapi
+                penampilan dengan hijab signature
+                dari KAARU Beyond Basic.
+
+            </p>
+
+            <a
+                href="../checkout/index.html"
+                class="btn-dark">
+
+                Buy Now
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ==========================================
+                FOOTER
+========================================== -->
+
+<footer>
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div>
+
+                <h2>
+
+                    KAARU
+
+                </h2>
+
+                <p>
+
+                    Beyond Basic
+
+                </p>
+
+            </div>
+
+            <div>
+
+                <a href="../index.html">Home</a>
+
+                <a href="../collection/index.html">Collection</a>
+
+                <a href="../about/index.html">About</a>
+
+                <a href="../faq/index.html">FAQ</a>
+
+            </div>
+
+            <div>
+
+                <a href="#">Instagram</a>
+
+                <a href="#">TikTok</a>
+
+                <a href="#">WhatsApp</a>
+
+            </div>
+
+        </div>
+
+        <div class="copyright">
+
+            © 2026 KAARU Beyond Basic.
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
