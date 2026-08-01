@@ -1140,3 +1140,42 @@ section{
     margin-bottom:20px;
 
 }
+.meta-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #ECE6DF;
+
+}
+
+.meta-item:last-child{
+
+    border-bottom:none;
+
+}
+
+.card-title{
+
+    font-size:24px;
+
+    margin-bottom:20px;
+
+}
+
+.quantity-box{
+
+    margin-top:20px;
+
+}
+
+.product-action{
+
+    margin-top:30px;
+
+}
