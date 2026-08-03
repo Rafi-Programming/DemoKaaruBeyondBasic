@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <!-- ==================================================
+                        META
+    =================================================== -->
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>
+
+        Collection | KAARU Beyond Basic
+
+    </title>
+
+    <!-- ==================================================
+                        GOOGLE FONT
+    =================================================== -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ==================================================
+                        FONT AWESOME
+    =================================================== -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- ==================================================
+                        CSS
+    =================================================== -->
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+<!-- ==================================================
+                    OVERLAY
+=================================================== -->
+
+<div
+    id="overlay"
+    class="overlay">
+
+</div>
+
+<!-- ==================================================
+                MOBILE MENU
+=================================================== -->
+
+<aside
+    id="mobileMenu"
+    class="mobile-menu">
+
+    <div class="mobile-header">
+
+        <h2>
+
+            Menu
+
+        </h2>
+
+        <button
+            id="closeMenu">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <nav class="mobile-nav">
+
+        <a href="../index.html">
+
+            Home
+
+        </a>
+
+        <a href="../collection/index.html"
+            class="active">
+
+            Collection
+
+        </a>
+
+        <a href="../fabric/index.html">
+
+            Fabric
+
+        </a>
+
+        <a href="../about/index.html">
+
+            About
+
+        </a>
+
+        <a href="../faq/index.html">
+
+            FAQ
+
+        </a>
+
+    </nav>
+
+</aside>
+
+<!-- ==================================================
+                CART OVERLAY
+=================================================== -->
+
+<div
+    id="cartOverlay"
+    class="cart-overlay">
+
+</div>
+
+<!-- ==================================================
+                CART DRAWER
+=================================================== -->
+
+<aside
+    id="cartDrawer"
+    class="cart-drawer">
+
+    <div class="cart-header">
+
+        <div>
+
+            <h2>
+
+                Shopping Bag
+
+            </h2>
+
+            <p>
+
+                <span id="drawerCount">
+
+                    0
+
+                </span>
+
+                Item
+
+            </p>
+
+        </div>
+
+        <button
+            id="closeCart"
+            class="cart-close">
+
+            <i class="fa-solid fa-xmark"></i>
+
+        </button>
+
+    </div>
+
+    <div
+        id="cartItems"
+        class="cart-items">
+
+        <!-- Render by JavaScript -->
+
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="subtotal">
+
+            <span>
+
+                Subtotal
+
+            </span>
+
+            <strong
+                id="cartSubtotal">
+
+                Rp0
+
+            </strong>
+
+        </div>
+
+        <button
+            id="checkoutBtn"
+            class="btn-primary">
+
+            Checkout ke WhatsApp
+
+        </button>
+
+    </div>
+
+</aside>
+
+<!-- ==================================================
+                    HEADER
+=================================================== -->
+
+<header
+    class="header">
+
+    <div class="container">
+
+        <div class="navbar">
+
+            <!-- ==========================
+                    LOGO
+            =========================== -->
+
+            <a
+                href="../index.html"
+                class="logo">
+
+                KAARU
+
+                <span>
+
+                    Beyond Basic
+
+                </span>
+
+            </a>
+
+            <!-- ==========================
+                DESKTOP NAVIGATION
+            =========================== -->
+
+            <nav
+                class="desktop-nav">
+
+                <a href="../index.html">
+
+                    Home
+
+                </a>
+
+                <a
+                    href="../collection/index.html"
+                    class="active">
+
+                    Collection
+
+                </a>
+
+                <a href="../fabric/index.html">
+
+                    Fabric
+
+                </a>
+
+                <a href="../about/index.html">
+
+                    About
+
+                </a>
+
+                <a href="../faq/index.html">
+
+                    FAQ
+
+                </a>
+
+            </nav>
+
+            <!-- ==========================
+                    RIGHT ICON
+            =========================== -->
+
+            <div class="nav-action">
+
+                <button
+                    id="searchBtn"
+                    class="icon-btn">
+
+                    <i class="fa-solid fa-magnifying-glass"></i>
+
+                </button>
+
+                <button
+                    id="cartBtn"
+                    class="icon-btn">
+
+                    <i class="fa-solid fa-bag-shopping"></i>
+
+                    <span
+                        id="cartCount">
+
+                        0
+
+                    </span>
+
+                </button>
+
+                <button
+                    id="menuBtn"
+                    class="icon-btn mobile-only">
+
+                    <i class="fa-solid fa-bars"></i>
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</header>
+
+<!-- ==================================================
+                    MAIN
+=================================================== -->
+
+<main>
+    <!-- ==================================================
+                COLLECTION INTRO
+=================================================== -->
+
+<section class="collection-hero">
+
+    <div class="container">
+
+        <!-- ==========================
+                SMALL LABEL
+        =========================== -->
+
+        <span class="section-label">
+
+            KAARU COLLECTION
+
+        </span>
+
+        <!-- ==========================
+                INTRO CARD
+        =========================== -->
+
+        <div class="hero-card fade-up">
+
+            <div class="hero-content">
+
+                <h1>
+
+                    One Product.
+                    <br>
+                    Endless Elegance.
+
+                </h1>
+
+                <p>
+
+                    Dirancang untuk perempuan yang menghargai
+                    kesederhanaan, kenyamanan, dan keanggunan.
+                    Satu hijab signature dengan berbagai pilihan
+                    warna earth tone yang mudah dipadukan untuk
+                    aktivitas sehari-hari.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+                COLLECTION GRID
+=================================================== -->
+
+<section class="collection-grid">
+
+    <div class="container">
+
+        <!-- ==========================
+                SECTION TITLE
+        =========================== -->
+
+        <div class="section-heading">
+
+            <span>
+
+                SIGNATURE COLLECTION
+
+            </span>
+
+            <h2>
+
+                Discover Every Shade
+
+            </h2>
+
+            <p>
+
+                Pilihan warna earth tone yang timeless,
+                dibuat untuk menemani aktivitas harian
+                dengan tampilan yang elegan.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- ==========================
+                PRODUCT GRID
+        =========================== -->
+
+        <div class="products">
+
+
+
+
+            <!-- =====================================
+                        PRODUCT 1
+            ====================================== -->
+
+            <article class="product-card fade-up">
+
+                <span class="badge">
+
+                    BEST SELLER
+
+                </span>
+
+                <a href="../product/index.html">
+
+                    <div class="product-image">
+
+                        <img
+                            src="Foto Model 1.jpeg"
+                            alt="KAARU Beyond Basic">
+
+                    </div>
+
+                </a>
+
+                <div class="product-content">
+
+                    <span class="category">
+
+                        SIGNATURE COLLECTION
+
+                    </span>
+
+                    <h3>
+
+                        KAARU Beyond Basic
+
+                    </h3>
+
+                    <p class="price">
+
+                        Rp189.000
+
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        data-id="1"
+                        data-name="KAARU Beyond Basic"
+                        data-color="Ivory"
+                        data-price="189000"
+                        data-image="Foto Model 1.jpeg">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+
+            <!-- =====================================
+                        PRODUCT 2
+            ====================================== -->
+
+            <article class="product-card fade-up">
+
+                <span class="badge">
+
+                    BEST SELLER
+
+                </span>
+
+                <a href="../product/index.html">
+
+                    <div class="product-image">
+
+                        <img
+                            src="Foto Model 2.jpeg"
+                            alt="KAARU Beyond Basic">
+
+                    </div>
+
+                </a>
+
+                <div class="product-content">
+
+                    <span class="category">
+
+                        SIGNATURE COLLECTION
+
+                    </span>
+
+                    <h3>
+
+                        KAARU Beyond Basic
+
+                    </h3>
+
+                    <p class="price">
+
+                        Rp189.000
+
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        data-id="2"
+                        data-name="KAARU Beyond Basic"
+                        data-color="Mocca"
+                        data-price="189000"
+                        data-image="Foto Model 2.jpeg">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+
+            <!-- =====================================
+                        PRODUCT 3
+            ====================================== -->
+
+            <article class="product-card fade-up">
+
+                <span class="badge">
+
+                    NEW
+
+                </span>
+
+                <a href="../product/index.html">
+
+                    <div class="product-image">
+
+                        <img
+                            src="Foto Model 3.jpeg"
+                            alt="KAARU Beyond Basic">
+
+                    </div>
+
+                </a>
+
+                <div class="product-content">
+
+                    <span class="category">
+
+                        SIGNATURE COLLECTION
+
+                    </span>
+
+                    <h3>
+
+                        KAARU Beyond Basic
+
+                    </h3>
+
+                    <p class="price">
+
+                        Rp189.000
+
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        data-id="3"
+                        data-name="KAARU Beyond Basic"
+                        data-color="Sage"
+                        data-price="189000"
+                        data-image="Foto Model 3.jpeg">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </article>
+
+
+
+
+            <!-- =====================================
+                        PRODUCT 4
+            ====================================== -->
+
+            <article class="product-card fade-up">
+
+                <span class="badge">
+
+                    LIMITED
+
+                </span>
+
+                <a href="../product/index.html">
+
+                    <div class="product-image">
+
+                        <img
+                            src="Foto Model 4.jpeg"
+                            alt="KAARU Beyond Basic">
+
+                    </div>
+
+                </a>
+
+                <div class="product-content">
+
+                    <span class="category">
+
+                        SIGNATURE COLLECTION
+
+                    </span>
+
+                    <h3>
+
+                        KAARU Beyond Basic
+
+                    </h3>
+
+                    <p class="price">
+
+                        Rp189.000
+
+                    </p>
+
+                    <button
+                        class="add-cart"
+                        data-id="4"
+                        data-name="KAARU Beyond Basic"
+                        data-color="Latte"
+                        data-price="189000"
+                        data-image="Foto Model 4.jpeg">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+<!-- ==================================================
+                WHY CHOOSE KAARU
+=================================================== -->
+
+<section class="features-section">
+
+    <div class="container">
+
+        <span class="section-label">
+
+            WHY YOU'LL LOVE IT
+
+        </span>
+
+        <div class="feature-grid">
+
+            <!-- Feature 1 -->
+
+            <article class="feature-card fade-up">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-feather"></i>
+
+                </div>
+
+                <h3>
+
+                    Ultra-light Fabric
+
+                </h3>
+
+                <p>
+
+                    Terbuat dari Premium Ultra-fine Voile
+                    yang ringan, lembut, adem,
+                    dan nyaman digunakan sepanjang hari.
+
+                </p>
+
+            </article>
+
+            <!-- Feature 2 -->
+
+            <article class="feature-card fade-up">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-layer-group"></i>
+
+                </div>
+
+                <h3>
+
+                    Easy To Style
+
+                </h3>
+
+                <p>
+
+                    Mudah dibentuk, tidak licin,
+                    serta tetap rapi untuk berbagai
+                    aktivitas harian.
+
+                </p>
+
+            </article>
+
+            <!-- Feature 3 -->
+
+            <article class="feature-card fade-up">
+
+                <div class="feature-icon">
+
+                    <i class="fa-solid fa-star"></i>
+
+                </div>
+
+                <h3>
+
+                    Premium Finishing
+
+                </h3>
+
+                <p>
+
+                    Menggunakan Baby Hem Premium
+                    sehingga terlihat lebih mewah,
+                    rapi, dan tahan lama.
+
+                </p>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ==================================================
+                NEWSLETTER
+=================================================== -->
+
+<section class="newsletter">
+
+    <div class="container">
+
+        <div class="newsletter-card fade-up">
+
+            <span>
+
+                JOIN OUR NEWSLETTER
+
+            </span>
+
+            <h2>
+
+                Be the first to know.
+
+            </h2>
+
+            <p>
+
+                Dapatkan informasi koleksi terbaru,
+                promo eksklusif,
+                serta inspirasi styling langsung
+                ke email Anda.
+
+            </p>
+
+            <form
+                class="newsletter-form">
+
+                <input
+
+                    type="email"
+
+                    placeholder="Enter your email"
+
+                    required>
+
+                <button
+                    type="submit">
+
+                    Subscribe
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- ==================================================
+                    FOOTER
+=================================================== -->
+
+<footer class="footer">
+
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <!-- Brand -->
+
+            <div>
+
+                <h3>
+
+                    KAARU
+
+                </h3>
+
+                <p>
+
+                    Beyond Basic.
+
+                    Premium hijab crafted
+                    with simplicity,
+                    comfort,
+                    and timeless elegance.
+
+                </p>
+
+            </div>
+
+            <!-- Navigation -->
+
+            <div>
+
+                <h4>
+
+                    Navigation
+
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        <a href="../index.html">
+
+                            Home
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="../collection/index.html">
+
+                            Collection
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="../fabric/index.html">
+
+                            Fabric
+
+                        </a>
+
+                    </li>
+
+                    <li>
+
+                        <a href="../about/index.html">
+
+                            About
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+            <!-- Contact -->
+
+            <div>
+
+                <h4>
+
+                    Contact
+
+                </h4>
+
+                <ul>
+
+                    <li>
+
+                        Instagram
+
+                    </li>
+
+                    <li>
+
+                        WhatsApp
+
+                    </li>
+
+                    <li>
+
+                        Email
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 KAARU Beyond Basic.
+
+            All Rights Reserved.
+
+        </div>
+
+    </div>
+
+</footer>
+
+
+
+
+
+<!-- ==================================================
+                BACK TO TOP
+=================================================== -->
+
+<button
+    id="backToTop">
+
+    <i class="fa-solid fa-arrow-up"></i>
+
+</button>
+
+</main>
+
+<!-- ==================================================
+                    JAVASCRIPT
+=================================================== -->
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
